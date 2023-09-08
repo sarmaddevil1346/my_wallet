@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:my_wallet/piechart/piechart.dart';
-
 import 'components/arrowbutton.dart';
 import 'config/colors.dart';
 import 'config/size.dart';
 import 'config/strings.dart';
-
 
 class ExpensesWidget extends StatefulWidget {
   @override
@@ -42,7 +40,8 @@ class _ExpensesWidgetState extends State<ExpensesWidget> {
                 child: Row(
                   children: <Widget>[
                     ArrowButton(
-                      margin: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 6, vertical: 6),
                       icon: Icon(
                         Icons.arrow_back_ios,
                         size: fontSize(17),
@@ -53,7 +52,8 @@ class _ExpensesWidgetState extends State<ExpensesWidget> {
                       icon: Icon(
                         Icons.arrow_forward_ios,
                         size: fontSize(17),
-                      ), margin: const EdgeInsets.all(0),
+                      ),
+                      margin: const EdgeInsets.all(0),
                     )
                   ],
                 ),
